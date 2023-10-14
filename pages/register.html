@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Voting System - Registration</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <style>
+        .address{
+            width: 23%;
+        }
+
+        .imagepart{
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 10px;
+            width: 23%;
+        }
+
+        .role{
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 10px;
+            width: 23%;
+        }
+
+        .role select{
+            border-radius: 5px;
+            padding: 10px;
+        }
+    </style>
+
+    <div class="headerSection">
+        <br><h1>Online Voting System</h1><br>
+    </div>
+    <hr>
+    <br>
+    <div class="bodySection">
+        <form action="">
+            <h2>Registration</h2><br><br>
+            <input type="text" name="name" placeholder="Enter Name">
+            <input type="number" name="mobile" placeholder="Enter Mobile Number"><br><br>
+            <input type="password" name="password" placeholder="Enter Password">
+            <input type="password" name="password" id="" placeholder="Confirm Password"><br><br>
+            <input class="address" type="text" name="address" id="" placeholder="Enter Address"><br><br>
+            <center>
+                <div class="imagepart">
+                    Upload Image: <input type="file" name="photo" >
+                </div>
+                <br>
+                <div class="role">
+                    Select Role: <select name="role" id="">
+                        <option value="1">Voter</option>
+                        <option value="2">Group</option>
+                    </select>
+                </div>
+            </center>
+            <br>
+            <button class="button">Register</button><br><br>
+            Already User? <a href="../index.html">Login here</a>
+        </form>
+    </div>
+</body>
+</html>
