@@ -1,4 +1,5 @@
 <?php
+    session_start();
     include("connect.php");
 
     $mobile = $_POST['mobile'];
@@ -15,8 +16,8 @@
         $_SESSION['groupsdata'] = $groupsdata;
 
         echo '<script>
-                window.location = "../pages/dashboard.php"
-        </script>'
+                window.location = "../pages/dashboard.php";
+        </script>';
     }
     else{
         echo '
