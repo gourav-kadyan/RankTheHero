@@ -14,7 +14,7 @@
     </div>
     <hr><br><br>
     <div class="bodySection">
-        <form action="">
+        <form action="api/login.php" method="post">
             <h2>Login</h2><br>
             <input type="number" name="mobile" id="" placeholder="Enter Mobile Number"><br><br>
             <input type="password" name="password" id="" placeholder="Enter Password"><br><br>
@@ -22,7 +22,7 @@
                 <option value="1">Voter</option>
                 <option value="2">Group</option>
             </select><br><br>
-            <button class="button">Login</button><br><br>
+            <button id="loginbtn" type="submit" class="button">Login</button><br><br>
             New User? <a href="pages/register.html">Register Here!!</a>
         </form>
     </div>
