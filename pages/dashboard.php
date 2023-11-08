@@ -21,7 +21,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Online Voting System - Dashboard</title>
+    <title> Best Hero Of COC - Dashboard</title>
 </head>
 <body>
 
@@ -37,14 +37,18 @@
         }
 
         #Profile{
-            background-color:white;
+            background-image: url("../css/background.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
             width:30%;
             padding:20px;
             float:left;
         }
 
         #group{
-            background-color:white;
+            background-image: url("../css/background.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
             width:60%;
             padding : 20px;
             float:right;
@@ -62,6 +66,17 @@
             background-color:green;
         }
 
+        body{
+            background-image: url("../css/bg3.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            color:white;
+        }
+
+        h1{
+            color:black;
+        }
+
     </style>
 
 
@@ -70,7 +85,7 @@
         <div class="headerSection" id="header">
             <a href="../"><button class="button" id="backbtn">Back</button></a>
             <a href="logout.php"><button class="button" id="logoutbtn">LogOut</button> </a>
-            <center><h1>Online Voting System</h1></center>
+            <center><h1>Best Hero In COC</h1></center>
         </div>
         <br><br>
         <hr>
@@ -90,7 +105,7 @@
                         ?>
                             <div>
                                 <img style="float:right" src="../assets/<?php echo $groupdata[$i]['photo'] ?>" alt="Group Image" height="100" width="100">
-                                <b>Group Name:</b><?php echo $groupdata[$i]['name'] ?><br><br>
+                                <b>Hero Name:</b><?php echo $groupdata[$i]['name'] ?><br><br>
                                 <b>Votes:</b><?php echo $groupdata[$i]['votes'] ?><br><br>
                                 <form action="../api/vote.php" method="POST">
                                     <input type="hidden" name="gvotes" value="<?php echo $groupdata[$i]['votes'] ?>">

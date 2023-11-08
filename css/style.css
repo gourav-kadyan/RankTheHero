@@ -1,12 +1,17 @@
 *{
     margin: 0;
     padding: 0;
-}
+} */
 
 body{
+   height: 100%;
+   width: 100%;
+   background-image: url("/css/background.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
    
-    background-color: #86da6c;
 }
+
 
 .headerSection{
     padding: 5px;
@@ -31,8 +36,11 @@ input{
 .button{
     padding: 10px;
     border-radius: 5px;
-    background-color: #3498db;
+    background-color: #db6c1d;
     font-size: 15px;
     color: antiquewhite;
 
 }
+h1{
+    color: white;
+} 
